@@ -9,6 +9,10 @@
     column-count: 3;
     column-width: 30%;
     padding: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-width: 30%;
+    -moz-column-count: 3;
+    -moz-column-width: 30%;
 }
 
 .imagesPanel figure{
@@ -96,7 +100,7 @@
     display: flex;
     flex-direction: column;
     width: 15%;
-    margin: 20px auto;
+    margin: 50px auto;
     text-decoration: none;
 }
 
