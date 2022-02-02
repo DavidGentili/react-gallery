@@ -1,0 +1,138 @@
+.loadingPanel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagesPanel{
+    margin-top: 50px;
+    column-count: 3;
+    column-width: 30%;
+    padding: 20px;
+}
+
+.imagesPanel figure{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.imagesPanel figure img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.imagesPanel figure figcaption{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px 30px;
+    background: rgb(36,36,36);
+    background: linear-gradient(0deg, rgba(36,36,36,.5) 0%, rgba(255,255,255,0) 50%); 
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+.imagesPanel figure:hover figcaption,
+.imagesPanel figure:active figcaption,
+.imagesPanel figure:focus figcaption{
+    opacity: 1;
+    transition-duration: .5s;
+}
+
+.imagesPanel figure figcaption a{
+    text-decoration: none;
+    color: #F1F1F1;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: .7;
+    transition-duration: .3s;
+}
+
+.imagesPanel figure figcaption a:hover{
+    opacity: 1;
+    transition-duration: .3s;
+}
+
+.controlPage{
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    font-size: 32px;
+    color: #242424;
+    width: 100px;
+    position: relative;
+}
+
+.controlPage button{
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #242424;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+
+.controlPage .prevButton{
+    left: 0;
+}
+
+.controlPage .nextButton{
+    right: 0;
+}
+
+.controlPage button:hover{
+    transform: scale(1.2);
+    transition-duration: .4s;
+}
+
+.App > a {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin: 20px auto;
+    text-decoration: none;
+}
+
+.App > a > p{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 2px;
+    color: #242424;
+    opacity: .6;
+    text-align: center;
+}
+
+.App > a > img{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .imagesPanel{
+        column-count: 2;
+        column-width: 50%;
+        padding: 20px;
+    }
+
+    .imagesPanel figure figcaption{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .imagesPanel{
+        column-count: 1;
+        column-width: 80%;
+        padding: 20px;
+    }
+    .App > a{
+        width: 30%;
+    }
+}
