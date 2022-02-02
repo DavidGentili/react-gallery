@@ -11,4 +11,4 @@ An image gallery created with React, it uses a free API from Pexels.com.
 Find images without a license.
 Enter the profile of their artists and learn more about their work
 
- [**I am alive**](https://quirky-newton-383b4a.netlify.app/) 
+ [**I am alive**](https://vigorous-swanson-3fd544.netlify.app) 
