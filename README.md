@@ -12,4 +12,4 @@ Entra al perfil de sus artistas y conoce mas sobre su trabajo
 >Enter the profile of their artists and learn more about their work
 
 
-** [I am alive](https://quirky-newton-383b4a.netlify.app/) **
+ [**I am alive**](https://quirky-newton-383b4a.netlify.app/) 
