@@ -21,7 +21,6 @@ const useGallery = () => {
         const res = await fetch(url,config);
         if(res.status === 200){
             const data = await res.json();
-            console.log(data);
             return {
                 photos: data.photos,
                 limit: Math.ceil(data.total_results / range),
@@ -36,7 +35,6 @@ const useGallery = () => {
     useEffect(() => {
         getImages()
         .then(data => {
-            console.log(data);
             setImages(data.photos)  
             setLimitPage(data.limit)
             setLoading(false);
