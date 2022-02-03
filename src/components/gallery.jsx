@@ -17,7 +17,7 @@ const Gallery = (props) => {
     return(
         <>
             <NavSearch query={query} setQuery={setQuery}/>
-            <div className={loading ? 'loadingPanel' : 'imagesPanel'}>
+            <div className={loading ? 'loadingPanel' : 'imagesPanel'} style={ !loading && {columnCount: 3}}>
                 {loading ? <Loading/> : images.map(img => <Image key={img.id} src={img.src.large} alt={img.alt} linkImage={img.url} linkPhotographer={img.photographer_url} photographer={img.photographer} color={img.avg_color}/>)}
             </div>
             

@@ -5,14 +5,15 @@
 }
 
 .imagesPanel{
-    margin-top: 50px;
-    column-count: 3;
-    column-width: 30%;
-    padding: 20px;
     -webkit-column-count: 3;
     -webkit-column-width: 30%;
     -moz-column-count: 3;
     -moz-column-width: 30%;
+    column-count: 3;
+    column-width: 30%;
+    padding: 20px;
+    margin-top: 50px;
+    
 }
 
 .imagesPanel figure{
